@@ -1,0 +1,7 @@
+C:\Users\wans\Documents\dev\dp\Marvel.Api\bin\Release\Marvel.Api.dll
+C:\Users\wans\Documents\dev\dp\Marvel.Api\bin\Release\Marvel.Api.pdb
+C:\Users\wans\Documents\dev\dp\Marvel.Api\bin\Release\RestSharp.dll
+C:\Users\wans\Documents\dev\dp\Marvel.Api\bin\Release\RestSharp.xml
+C:\Users\wans\Documents\dev\dp\Marvel.Api\obj\Release\Marvel.Api.csprojResolveAssemblyReference.cache
+C:\Users\wans\Documents\dev\dp\Marvel.Api\obj\Release\Marvel.Api.dll
+C:\Users\wans\Documents\dev\dp\Marvel.Api\obj\Release\Marvel.Api.pdb

@@ -1,0 +1,40 @@
+﻿@model DP.Marvel.Models.MVCGridToolbarModel
+@{
+    string gridName = Model.MVCGridName;
+}
+
+<div class="row">
+    <div class="col-md-3">
+        <div class="form-inline">
+           
+        </div>
+    </div>
+    <div class="col-md-9">
+        <div class="form-inline pull-right">
+            <div class="btn-group">
+                @if (Model.ColumnVisibility)
+                {
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                            <span class="glyphicon glyphicon-list" aria-hidden="true"></span> Fields
+                        </button>
+                        <ul class="dropdown-menu" role="menu" data-mvcgrid-type="columnVisibilityList" data-mvcgrid-name="@(gridName)"></ul>
+                    </div>
+                }
+         
+            </div>
+
+            @if (Model.GlobalSearch)
+            {
+                <span>&nbsp;</span>
+                <div class="form-group">
+                    <label>
+                        <input type="search" placeholder="Buscar" class="form-control"
+                                       data-mvcgrid-type="additionalQueryOption" data-mvcgrid-option="search" data-mvcgrid-name="@(gridName)"
+                                       data-mvcgrid-apply-additional="keyup">
+                    </label>
+                </div>
+            }
+        </div>
+    </div>
+</div>

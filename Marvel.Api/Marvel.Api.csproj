@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D36CB069-B18B-4EFB-934C-15CD9349E3B8}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Marvel.Api</RootNamespace>
+    <AssemblyName>Marvel.Api</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="RestSharp">
+      <HintPath>..\packages\RestSharp.105.1.0\lib\net451\RestSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Characters.cs" />
+    <Compile Include="Comics.cs" />
+    <Compile Include="Core.Async.cs" />
+    <Compile Include="Core.cs" />
+    <Compile Include="Creators.cs" />
+    <Compile Include="Events.cs" />
+    <Compile Include="Filters\BaseFilter.cs" />
+    <Compile Include="Filters\ComicRequestFilter.cs" />
+    <Compile Include="Filters\CreatorRequestFilter.cs" />
+    <Compile Include="Filters\EventRequestFilter.cs" />
+    <Compile Include="Filters\SeriesRequestFilter.cs" />
+    <Compile Include="Filters\StoryRequestFilter.cs" />
+    <Compile Include="Model\DomainObjects\Character.cs" />
+    <Compile Include="Model\Lists\CharacterList.cs" />
+    <Compile Include="Model\Summaries\CharacterSummary.cs" />
+    <Compile Include="Model\DomainObjects\CollectedIssue.cs" />
+    <Compile Include="Model\DomainObjects\Collection.cs" />
+    <Compile Include="Model\DomainObjects\Creator.cs" />
+    <Compile Include="Model\Lists\CreatorList.cs" />
+    <Compile Include="Model\Summaries\CreatorSummary.cs" />
+    <Compile Include="Model\DomainObjects\Date.cs" />
+    <Compile Include="Model\DomainObjects\Event.cs" />
+    <Compile Include="Model\DomainObjects\Image.cs" />
+    <Compile Include="Model\DomainObjects\Price.cs" />
+    <Compile Include="Model\DomainObjects\Series.cs" />
+    <Compile Include="Model\DomainObjects\Story.cs" />
+    <Compile Include="Model\DomainObjects\TextObject.cs" />
+    <Compile Include="Model\DomainObjects\Variant.cs" />
+    <Compile Include="Filters\CharacterRequestFilter.cs" />
+    <Compile Include="Results\CharacterResult.cs" />
+    <Compile Include="Model\Lists\ComicList.cs" />
+    <Compile Include="Model\Summaries\ComicSummary.cs" />
+    <Compile Include="DataContainer.cs" />
+    <Compile Include="Model\Lists\EventList.cs" />
+    <Compile Include="Model\Summaries\EventSummary.cs" />
+    <Compile Include="Model\DomainObjects\Comic .cs" />
+    <Compile Include="ResultBase.cs" />
+    <Compile Include="Model\Lists\SeriesList.cs" />
+    <Compile Include="Model\Summaries\SeriesSummary.cs" />
+    <Compile Include="Model\Lists\StoryList.cs" />
+    <Compile Include="Model\Summaries\StorySummary.cs" />
+    <Compile Include="Model\DomainObjects\Thumbnail.cs" />
+    <Compile Include="Model\DomainObjects\Url.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Results\ComicResult.cs" />
+    <Compile Include="Results\CreatorResult.cs" />
+    <Compile Include="Results\EventResult.cs" />
+    <Compile Include="Results\SeriesResult.cs" />
+    <Compile Include="Results\StoryResult.cs" />
+    <Compile Include="Series.cs" />
+    <Compile Include="Stories.cs" />
+    <Compile Include="Util.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

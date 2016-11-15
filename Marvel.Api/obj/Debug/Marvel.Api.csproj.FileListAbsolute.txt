@@ -1,0 +1,14 @@
+C:\Users\wans\Documents\dev\marvel\marvel-csharp\src\Marvel.Api\bin\Debug\Marvel.Api.dll
+C:\Users\wans\Documents\dev\marvel\marvel-csharp\src\Marvel.Api\bin\Debug\Marvel.Api.pdb
+C:\Users\wans\Documents\dev\marvel\marvel-csharp\src\Marvel.Api\bin\Debug\RestSharp.dll
+C:\Users\wans\Documents\dev\marvel\marvel-csharp\src\Marvel.Api\bin\Debug\RestSharp.xml
+C:\Users\wans\Documents\dev\marvel\marvel-csharp\src\Marvel.Api\obj\Debug\Marvel.Api.csprojResolveAssemblyReference.cache
+C:\Users\wans\Documents\dev\marvel\marvel-csharp\src\Marvel.Api\obj\Debug\Marvel.Api.dll
+C:\Users\wans\Documents\dev\marvel\marvel-csharp\src\Marvel.Api\obj\Debug\Marvel.Api.pdb
+C:\Users\wans\Documents\dev\dp\Marvel.Api\bin\Debug\Marvel.Api.dll
+C:\Users\wans\Documents\dev\dp\Marvel.Api\bin\Debug\Marvel.Api.pdb
+C:\Users\wans\Documents\dev\dp\Marvel.Api\bin\Debug\RestSharp.dll
+C:\Users\wans\Documents\dev\dp\Marvel.Api\bin\Debug\RestSharp.xml
+C:\Users\wans\Documents\dev\dp\Marvel.Api\obj\Debug\Marvel.Api.csprojResolveAssemblyReference.cache
+C:\Users\wans\Documents\dev\dp\Marvel.Api\obj\Debug\Marvel.Api.dll
+C:\Users\wans\Documents\dev\dp\Marvel.Api\obj\Debug\Marvel.Api.pdb

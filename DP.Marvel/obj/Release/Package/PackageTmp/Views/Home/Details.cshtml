@@ -1,0 +1,56 @@
+﻿@model Marvel.Api.Model.DomainObjects.Character
+
+<div class="page-header text-center">
+    <h1>@Model.Name</h1>
+</div>
+
+
+<div class="row">
+    <div class="col-sm-2">
+        <img src="@Url.Content(Model.Thumbnail.Path + "."+ Model.Thumbnail.Extension)" class="img-thumbnail img-responsive" alt="IMAGES" />
+    </div>
+    <div class="col-sm-6">
+        <p> @Model.Description</p>
+    </div>
+
+</div>
+<div class="row">
+    <div class="col-sm-2">
+    </div>
+    <div class="col-sm-3">
+        @Html.ActionLink("Voltar para lista de Heróis da Marvel Comics", "Index", "Home", null, new { @class = "btn btn-primary" })
+    </div>
+</div>
+
+<div class="page-header text-center">
+    <h1>Fascículos</h1>
+</div>
+@{ foreach (var comic in (IList<Marvel.Api.Model.DomainObjects.Comic>)ViewBag.Comics)
+    {
+        <br />
+            <div class="row">
+                <div class="col-sm-2">
+                    <img src="@Url.Content(comic.Thumbnail.Path + "." + comic.Thumbnail.Extension)" class="img-thumbnail img-responsive" alt="IMAGES" />
+                </div>
+                <div class="col-sm-4">
+                    <b> Titulo:</b> @comic.Title
+                </div>
+
+                <div class="col-sm-2">
+                    <b> Número da capa:</b> @comic.IssueNumber
+                </div>
+                <div class="col-sm-7">
+                    <br />
+                    <p> @comic.Description</p>
+                </div>
+            </div>
+
+    }
+
+}
+
+<style>
+    img {
+        width: 140px;
+    }
+</style>

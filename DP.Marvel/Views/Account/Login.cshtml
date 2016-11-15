@@ -1,0 +1,41 @@
+﻿@using DP.Marvel.Models
+@model LoginViewModel
+
+<h2> Dados de acesso</h2>
+<div class="row">
+    <div class="col-md-8">
+        <section id="loginForm">
+            @using (Html.BeginForm("Login", "Account", new { ReturnUrl = ViewBag.ReturnUrl }, FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
+            {
+                @Html.AntiForgeryToken()
+                <hr />
+                @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                <div class="form-group">
+                    @Html.Label("", new { @class = "col-md-2 control-label" })
+                    <div class="col-md-10">
+                        @Html.TextBoxFor(m => m.PublicKey, new { @class = "form-control", placeholder = "public_key" })
+                        @Html.ValidationMessageFor(m => m.PublicKey, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+                <div class="form-group">
+                    @Html.Label("", new { @class = "col-md-2 control-label" })
+                    <div class="col-md-10">
+                        @Html.PasswordFor(m => m.PrivateKey, new { @class = "form-control", placeholder = "private_key" })
+                        @Html.ValidationMessageFor(m => m.PrivateKey, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+               
+                <div class="form-group">
+                    <div class="col-md-offset-2 col-md-10">
+                        <input type="submit" value="Acessar" class="btn btn-primary" />
+                    </div>
+                </div>
+            }
+        </section>
+    </div>
+   
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

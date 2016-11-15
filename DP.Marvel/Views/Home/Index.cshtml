@@ -1,0 +1,22 @@
+﻿
+
+<div class="page-header text-center">
+    <h1>Lista de Heróis da Marvel Comics</h1>
+</div>
+
+
+@using DP.Marvel.Models
+
+<div class="panel panel-default">
+    <div class="panel-body">
+        @Html.Partial("_MVCGridToolbar", new MVCGridToolbarModel()
+   {
+       MVCGridName = "CharacterGrid",
+       PageSize = true,
+       ColumnVisibility = false,
+       Export = false,
+       GlobalSearch = true
+   })
+        @Html.MVCGrid("CharacterGrid")
+    </div>
+</div>
